@@ -2,7 +2,13 @@
   "compilerOptions": {
     "composite": true,
     "module": "esnext",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@project/app/modules/*": ["src/modules/*"],
+      "@project/server/data/*": ["server/src/json/*"]
+    }
   },
   "include": ["vite.config.ts"]
 }
